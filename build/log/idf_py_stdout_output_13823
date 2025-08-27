@@ -1,0 +1,136 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6328
+load:0x40078000,len:15828
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (27) boot: ESP-IDF v5.5-dev-1050-gb5ac4fbdf9-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 24 2025 18:31:31[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b9d8h (113112) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=0002ba00 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0002ba24 vaddr=3ffb0000 size=03f48h ( 16200) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=0002f974 vaddr=40080000 size=006a4h (  1700) load[0m
+[0;32mI (139) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=9342ch (603180) map[0m
+[0;32mI (352) esp_image: segment 5: paddr=000c3454 vaddr=400806a4 size=17590h ( 95632) load[0m
+[0;32mI (401) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (401) boot: Disabling RNG early entropy source...[0m
+[0;32mI (412) cpu_start: Multicore app[0m
+[0;32mI (420) cpu_start: Pro cpu start user code[0m
+[0;32mI (420) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (420) app_init: Application information:[0m
+[0;32mI (420) app_init: Project name:     hello_world[0m
+[0;32mI (424) app_init: App version:      1[0m
+[0;32mI (428) app_init: Compile time:     Jul 24 2025 18:31:25[0m
+[0;32mI (433) app_init: ELF file SHA256:  60125f7b8...[0m
+[0;32mI (437) app_init: ESP-IDF:          v5.5-dev-1050-gb5ac4fbdf9-dirty[0m
+[0;32mI (443) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (447) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (451) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (455) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (461) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB81D0 len 00027E30 (159 KiB): DRAM[0m
+[0;32mI (471) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (477) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (482) heap_init: At 40097C34 len 000083CC (32 KiB): IRAM[0m
+[0;32mI (489) spi_flash: detected chip: generic[0m
+[0;32mI (491) spi_flash: flash io: dio[0m
+[0;33mW (494) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (507) main_task: Started on CPU0[0m
+[0;32mI (517) main_task: Calling app_main()[0m
+[0;32mI (537) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (537) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (537) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (547) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (557) gpio: GPIO[16]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (567) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (577) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (587) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (587) gpio: GPIO[21]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (597) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (607) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (617) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (627) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (637) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (637) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (647) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (677) wifi:wifi driver task: 3ffc0410, prio:23, stack:6656, core=0[0m
+[0;32mI (687) wifi:wifi firmware version: 34d97ea27[0m
+[0;32mI (687) wifi:wifi certification version: v7.0[0m
+[0;32mI (687) wifi:config NVS flash: enabled[0m
+[0;32mI (687) wifi:config nano formatting: disabled[0m
+[0;32mI (697) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (697) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (697) wifi:Init management short buffer num: 32[0m
+[0;32mI (707) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (707) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (717) wifi:Init static rx buffer num: 10[0m
+[0;32mI (717) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (727) wifi_init: rx ba win: 6[0m
+[0;32mI (727) wifi_init: accept mbox: 6[0m
+[0;32mI (727) wifi_init: tcpip mbox: 32[0m
+[0;32mI (727) wifi_init: udp mbox: 6[0m
+[0;32mI (737) wifi_init: tcp mbox: 6[0m
+[0;32mI (737) wifi_init: tcp tx win: 5760[0m
+[0;32mI (737) wifi_init: tcp rx win: 5760[0m
+[0;32mI (737) wifi_init: tcp mss: 1440[0m
+[0;32mI (747) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (757) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (767) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (767) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (857) wifi:mode : sta (08:d1:f9:29:54:d4)[0m
+[0;32mI (857) wifi:enable tsf[0m
+[0;32mI (857) HomeAutomation: Waiting for WiFi connection...[0m
+[0;32mI (857) HomeAutomation: WiFi station start[0m
+[0;32mI (867) wifi:new:<2,0>, old:<1,0>, ap:<255,255>, sta:<2,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (867) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (877) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (887) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (997) wifi:connected with ACTFIBERNET, aid = 4, channel 2, BW20, bssid = 24:2f:d0:1f:4a:26[0m
+[0;32mI (997) wifi:security: WPA2-PSK, phy: bgn, rssi: -59[0m
+[0;32mI (997) wifi:pm start, type: 0[0m
+
+[0;32mI (997) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1007) esp_netif_handlers: sta ip: 192.168.0.201, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (1017) HomeAutomation: Got IP: 192.168.0.201[0m
+[0;32mI (1087) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1357) HomeAutomation: Connected to AP: ACTFIBERNET (RSSI: -57)[0m
+[0;32mI (1357) HomeAutomation: IP Address: 192.168.0.201[0m
+[0;32mI (1357) HomeAutomation: Gateway: 192.168.0.1[0m
+[0;32mI (1357) HomeAutomation: Netmask: 255.255.255.0[0m
+[0;32mI (1357) HomeAutomation: Starting HTTP server on port 8001...[0m
+[0;32mI (1367) HomeAutomation: HTTP server started[0m
+[0;32mI (1367) HomeAutomation: Home automation system initialized[0m
+[0;32mI (1377) main_task: Returned from app_main()[0m
+[0;32mI (1827) wifi:<ba-add>idx:0 (ifx:0, 24:2f:d0:1f:4a:26), tid:0, ssn:4, winSize:64[0m
+[0;33mW (14227) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (14227) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (32967) HomeAutomation: Relay 2 set to ON[0m
+[0;32mI (32997) HomeAutomation: Relay 3 set to ON[0m
+[0;32mI (33037) HomeAutomation: Relay 0 set to ON[0m
+[0;32mI (33067) HomeAutomation: Relay 1 set to ON[0m
+[0;32mI (47277) HomeAutomation: Relay 2 set to ON[0m
+[0;32mI (47317) HomeAutomation: Relay 3 set to ON[0m
+[0;32mI (47347) HomeAutomation: Relay 0 set to ON[0m
+[0;32mI (47377) HomeAutomation: Relay 1 set to ON[0m
+[0;32mI (55177) HomeAutomation: Relay 2 set to OFF[0m
+[0;32mI (55217) HomeAutomation: Relay 3 set to OFF[0m
+[0;32mI (55237) HomeAutomation: Relay 0 set to OFF[0m
+[0;32mI (55267) HomeAutomation: Relay 1 set to OFF[0m

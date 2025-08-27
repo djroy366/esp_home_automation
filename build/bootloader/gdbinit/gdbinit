@@ -1,0 +1,2 @@
+source /home/dj/esp_home_automation/my_home_automation/build/bootloader/gdbinit/symbols
+source /home/dj/esp_home_automation/my_home_automation/build/bootloader/gdbinit/connect

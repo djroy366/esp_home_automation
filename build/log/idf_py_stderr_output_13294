@@ -1,0 +1,11 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40078fb4: bootloader_common_ota_select_invalid at /home/dj/esp-idf/components/bootloader_support/src/bootloader_common_loader.c:41
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/dj/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/dj/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x4008d178: xTaskCreateStaticPinnedToCore at /home/dj/esp-idf/components/freertos/esp_additions/freertos_tasks_c_additions.h:296
+[0m
+[0m
